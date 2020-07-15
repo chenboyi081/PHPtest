@@ -18,7 +18,7 @@ while($i<=5)
     $i++;
 }
 echo  "<br>";
-//0. do while
+//02 do while
 $i=1;
 do
 {
@@ -26,6 +26,7 @@ do
     echo "The number is " . $i . "<br>";
 }
 while ($i<=5);
+
 ?>
 
 </body>
