@@ -1,0 +1,20 @@
+在学习php和mysql连接前，如果对mysql不太懂，链接：https://www.runoob.com/mysql/mysql-tutorial.html 进行学习。
+语句 set names utf8;用于设定数据库编码，让中文可以正常显示。
+
+一、PHP 5 及以上版本建议使用以下方式连接 MySQL :
+MySQLi extension ("i" 意为 improved)
+PDO (PHP Data Objects)
+在 PHP 早期版本中我们使用 MySQL 扩展。但该扩展在 2012 年开始不建议使用。
+
+二、我是该用 MySQLi ，还是 PDO?
+如果你需要一个简短的回答，即 "你习惯哪个就用哪个"。
+MySQLi 和 PDO 有它们自己的优势：
+PDO 应用在 12 种不同数据库中， MySQLi 只针对 MySQL 数据库。
+所以，如果你的项目需要在多种数据库中切换，建议使用 PDO ，这样你只需要修改连接字符串和部分查询语句即可。 
+使用 MySQLi, 如果不同数据库，你需要重新编写所有代码，包括查询。
+两者都是面向对象, 但 MySQLi 还提供了 API 接口。
+两者都支持预处理语句。 预处理语句可以防止 SQL 注入，对于 web 项目的安全性是非常重要的。
+
+三、考虑到上面的优缺点，所以我在示例里面使用PDO。
+如果还想学习MySQLi,可以https://www.runoob.com/php/php-mysql-connect.html 这个链接里面学习。
+
